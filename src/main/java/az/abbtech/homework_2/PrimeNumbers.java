@@ -11,16 +11,16 @@ public class PrimeNumbers {
         System.out.println("Prime numbers up to " + num + ":");
 
         for (int n = 2; n <= num; n++) {
-            boolean isPrime = true;
+            boolean checker = true;
 
             for (int i = 2; i <= n / 2; i++) {
                 if (n % i == 0) {
-                    isPrime = false;
+                    checker = false;
                     break;
                 }
             }
 
-            if (isPrime) {
+            if (checker) {
                 System.out.print(n + " ");
             }
         }
